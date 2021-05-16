@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fed049;
+    padding: 50px;
+    }
+    * {
+    box-sizing: border-box;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 50px;
+
+    }
+    input[type=text],[type=tel],[type=date],[type=datetime], select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 9px;
+        margin-bottom: 8px;
+        resize: vertical;
+    }
+    .submit {
+        background-color: #049c50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 20px 50px;
+    }
+    .submit:hover {
+        background-color: #0e833b;
+    }
+    .column{
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+
+<body>
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Chosse Your Charger</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="https://www.img.in.th/images/edaf42847b6eb410238647b8d1ac60bd.jpg" style="width:90%"  >
+            </div>
+            <div class="column">
+                <label for="qu1">ประเภทหัวชาร์จ</label>
+                <select name="anw1" id="anw1">
+                    <option value="single phase">Single Phase</option>
+                    <option value="3 phase">3 Phase</option>
+                    <option value="chademo">CHAdeMO</option>
+                    <option value="ccs">CCS Combo </option>
+                    <option value="house">ปลั๊กไฟต่อตรง</option>
+                </select>
+                <label for="address">สถานที่</label>
+                <select name="anw2" id="anw2">
+                    <option value="">กฟน. สำนักงานใหญ่ เพลินจิต</option>
+                    <option value="">กฟน. เขตวัดเลียบ</option>
+                    <option value="">กฟน. เขตสามเสน</option>
+                    <option value="">กฟน. เขตบางเขน</option>
+                    <option value="">กฟน. เขตบางขุนเทียน</option>
+                    <option value="">กฟน. เขตลาดกระบัง</option>
+                    <option value="">กฟน. เขตบางใหญ่</option>
+                    <option value="">กฟน. เขตสมุทรปราการ</option>
+                    <option value="">กฟน. เขตราษฎร์บูรณะ</option>
+                    <option value="">กฟน. เขตธนบุรี</option>
+                    <option value="">กฟน. ที่ทำการบางพูด</option>
+                    <option value="">7-Eleven สาขาบ้านสวนลาซาล (ศรีนครินทร์)</option>
+                    <option value="">7-Eleven สาขา สน.บางขุนนนท์</option>
+                </select>
+                <label for="day">วันที่</label>
+                <input type="date" name="day" id=""><br>
+                <label for="time">เวลา</label>
+                <input type="datetime" name="time" id="">
+                <p></p>
+                <label for="name">ชื่อ</label>
+                <input type="text" name="name" id="">
+                <label for="lastname">นามสกุล</label>
+                <input type="text" name="lastname" id="">
+                <label for="tel">เบอร์โทร</label>
+                <input type="tel" name="" id="">
+               <input type="submit" value="ร่วมลงชื่อ" class="submit">
+            </div>
+
+        </div>
+</body>
+
+</html>
